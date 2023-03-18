@@ -1,0 +1,38 @@
+.produto{
+    background-color: blue;
+    width: 800px;
+    display: flex;
+    color: white;
+}
+.produto div{
+    align-items: center;
+
+}
+.nome{
+    background-color: rgb(85, 85, 85);
+    width: 100px;
+}
+.categoria{
+    background-color: rgb(68, 68, 68);
+    width: 100px;
+}
+.marca{
+    background-color: rgb(59, 59, 59);
+    width: 100px;
+}
+.preco{
+    background-color: rgb(54, 54, 54);
+    width: 100px;
+}
+.loja{
+    background-color: rgb(41, 41, 41);
+    width: 100px;
+}
+.img{
+    background-color: rgb(44, 44, 44);
+    width: 100px;
+}
+.estoque{
+    background-color: rgb(27, 27, 27);
+    width: 100px;
+}
