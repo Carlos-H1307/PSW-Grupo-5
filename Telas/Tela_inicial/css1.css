@@ -288,6 +288,114 @@ footer{
 }
 
 
+/*CSS do carrinho*/
+
+#carrinho{
+    overflow-x: auto;
+}
+
+#carrinho table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#carrinho table img{
+    width: 70px;
+}
+
+#carrinho table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+
+}
+
+
+#carrinho table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+
+}
+#carrinho table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+
+}
+#carrinho table td:nth-child(4),
+#carrinho table td:nth-child(5),
+#carrinho table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+
+}
+
+#carrinho table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#carrinho table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#carrinho table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 19px 0;
+}
+
+#carrinho table tbody tr td{
+    padding-top: 15px;
+}
+
+#carrinho table tbody td{
+    font-size: 13px;
+}
+
+#addcarrinho{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+#subtotal h3{
+    padding-bottom: 15px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+#subtotal botao{
+    
+    color: #fff;
+    padding: 12px 20px;
+}
+
+/*Fim CSS carrinho*/
+
 @media (max-width:799px){
 
     .section-p1 {
