@@ -72,8 +72,7 @@ body {
 #close{
     
     position: absolute;
-    top: 30px;
-    left: 30px;
+    
 }
 
 .logo{
@@ -388,7 +387,7 @@ footer{
 }
 
 
-#subtotal botao{
+#subtotal botao-compra{
     
     color: #fff;
     padding: 12px 20px;
