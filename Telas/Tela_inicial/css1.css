@@ -73,10 +73,8 @@ body {
     align-items: center;
 }
 
-#close{
-    
-    position: absolute;
-    
+#close{  
+    position: absolute;  
 }
 
 .logo{
@@ -85,7 +83,8 @@ body {
 
 .pesquisar{
     height: 40px;
-    width: 550px;
+    width: 30vw;
+    min-width: 100px;
     border:none;
     border-radius: 10px;
     padding-left: 20px;
