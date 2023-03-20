@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-size: 100%;
@@ -14,7 +13,7 @@ body {
 
 /*formatacao cabecalho*/
 
-.cabecalho{
+#cabecalho{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,6 +21,59 @@ body {
     padding: 24px;
     background-color: #2d394b;
     margin-bottom: 50px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: black;
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*reponsividade*/
+
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 .logo{
@@ -130,19 +182,32 @@ main{
 .novidade-produto-botao:hover{
     background-color: #2d394b;
 }
-
-.categorias{
+#categorias{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+}
+
+#categorias .categorias-individual{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.3);
+    border: 1px solid #1d40da;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#categorias .categorias-individual:hover{
+    box-shadow: 20px 20px 34px rgb(70, 62, 221, 0.1);
+
 }
 
 .categorias-individual-imagem{
     margin-top: 10px;
     background-color: white;
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
 
@@ -220,4 +285,139 @@ footer{
     font-weight: 500;
     word-spacing: 5px;
     font-size: 18px;
+}
+
+
+@media (max-width:799px){
+
+    .section-p1 {
+        padding: 40px 80px;
+    } 
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #2f375c;
+        box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+        padding: 80 px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+    }
+
+    #hero {
+        
+        height: 90vh;
+        padding: 0 80px;
+        background-position:top 30% right 30% ;
+    }
+
+
+    #feature {
+        
+        justify-content: center;
+        
+    }
+
+    #feature .fe-box {
+        
+        margin: 15px 15px;
+    }
+    
+
+    #Produto1 .pro-container {
+        
+        justify-content: center;
+        
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width:477px){
+
+    #header {
+        
+        padding: 10px 30px;
+        
+    }
+
+    #hero {
+        
+        
+        padding: 0 20px;
+        background-position:55% ;
+    }
+
+    #feature {
+        
+        justify-content: space-between;
+        
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    /*Single Produto*/
+    #produtodetalhes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #produtodetalhes .single-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #produtodetalhes .single-detalhes {
+        width: 100%;
+        
+    }
+
+    #addcarrinho {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    #subtotal {
+        width: 10%;
+        padding: 20px;
+    }
 }

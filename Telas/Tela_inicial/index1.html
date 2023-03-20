@@ -7,18 +7,28 @@
     <title></title>
 </head>
 <body>
-    <header class="cabecalho">
+    <section id="cabecalho">
         <a href="index1.html"><img src="./imagens/logo.png" alt="logo" class="logo"></a>
-        <form action="">
-            <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
-        </form>
-        <nav>
-            <a href="../Login/login.html" class="menu-item">Login</a>
-            <a href="#" class="menu-item">Categorias</a>
-            <a href="#" class="menu-item">Carrinho</a>
-            <a href="#" class="menu-item">Contato</a>
-        </nav>
-    </header>
+        
+        <div>
+        <ul id="navbar">
+            
+            <li><a href="../Login/login.html" >Login</a></li>
+            <li> <a href="#" >Categorias</a></li>
+            <li><a href="carrinho.html" >Carrinho</a></li>
+            <li><a href="#" >Contato</a></li>
+             <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+             <li><form action="">
+                <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
+            </form></li>
+        </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
     <main>
         
         <section class="novidades">
@@ -69,7 +79,7 @@
 
         <section>
             <h2 class="titulos">Categorias</h2>
-            <div class="categorias">
+            <div id="categorias">
                 <div class="categorias-individual">
                     <p>Hardware</p>
                     <a href="#"><img src="./imagens/categorias/hardware.webp" alt="hardware" class="categorias-individual-imagem"></a>
@@ -94,11 +104,9 @@
         </section>
     </main>
     <footer>
-<<<<<<< HEAD:html/index1.html
-        <a href="../html/index1.html"><img src="../imagens/rodape.png" alt="rodape" class="rodape"></a>
-=======
         <a href="#"><img src="./imagens/rodape.png" alt="rodape" class="rodape"></a>
->>>>>>> 8708c1f808fce8642b41dca76fbda418fa8d811b:Telas/Tela_inicial/index1.html
     </footer>
+    <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
