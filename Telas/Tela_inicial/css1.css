@@ -24,7 +24,7 @@ body {
     justify-content: space-around;
     padding: 24px;
     background-color: #2d394b;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 #navbar{
@@ -108,6 +108,7 @@ body {
 }
 
 main{
+    padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -219,7 +220,7 @@ footer{
     text-align: center;
     margin: 0px;
     padding: 0px;
-    background-color: #2d394b;
+    background-color: #000000;
 }
 
 .rodape{
@@ -504,7 +505,7 @@ footer{
     height: 450px;
     
     background: #2f3f5f ;
-    border: 2px solid rgba(255,255,255, 0.5);
+    border: 2px solid rgba(214, 214, 214, 0.664);
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
