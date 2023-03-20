@@ -508,8 +508,7 @@ footer{
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
-    justify-content: center
-    ;
+    justify-content: center;
     align-items: center;
 }
 
