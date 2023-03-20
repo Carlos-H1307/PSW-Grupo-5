@@ -622,6 +622,53 @@ button{
 
 /*CSS LOGIN*/
 
+
+/*Simcle imagem*/
+
+#produtodetalhes{
+    display: flex;
+    margin-top: 20px;
+}
+
+#produtodetalhes .single-image{
+    width: 40%;
+    margin-right: 50px;
+    
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#produtodetalhes .single-detalhes{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#produtodetalhes .single-detalhes h4{
+    padding: 40px 0 20px 0;
+}
+#produtodetalhes .single-detalhes h2{
+    padding: 26px;
+}
+
+#produtodetalhes .single-detalhes button{
+    background: #088178;
+    color: #fff;
+}
+
+
+#produtodetalhes .single-detalhes span{
+    line-height: 25px;
+}
+
+/**/
 @media (max-width:799px){
 
      
@@ -667,12 +714,7 @@ button{
         font-size: 24px;
     }
 
-    #hero {
-        
-        height: 90vh;
-        padding: 0 80px;
-        background-position:top 30% right 30% ;
-    }
+  
 
 
     #feature {
@@ -708,12 +750,7 @@ button{
         
     }
 
-    #hero {
-        
-        
-        padding: 0 20px;
-        background-position:55% ;
-    }
+    
 
     #feature {
         
@@ -752,4 +789,6 @@ button{
         width: 10%;
         padding: 20px;
     }
+    
+
 }

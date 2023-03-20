@@ -33,10 +33,35 @@
 
 
     <main>
-        <section class="compra">
-            <div class="propaganda">
-                <img src="../Tela_inicial/imagens/produtos/produto-gabinete.webp" alt="gabinete" class="compra-imagem">
-            </div>
+        <section id="produtodetalhes">
+            
+                
+
+
+                <div class="single-image">
+                    <img src="../Tela_inicial/imagens/produtos/produto-gabinete.webp" width="100%" style="width:550px;height:350px;" id="Mainimg">
+                    
+                    <div class="small-img-group">
+        
+                        <div class="small-img-col">
+                            <img src="../Tela_inicial/imagens/produtos/produto-gabinete.webp" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="../Tela_inicial/imagens/produtos/Gabinete_2.jpg" width="100%" class="small-img" alt="">
+                        </div>
+        
+        
+                        <div class="small-img-col">
+                            <img src="../Tela_inicial/imagens/produtos/Gabinete_3.jpg" width="100%" class="small-img" alt="">
+                        </div>
+        
+                        <div class="small-img-col">
+                            <img src="../Tela_inicial/imagens/produtos/Gabinete_4.jpg" width="100%" class="small-img" alt="">
+                        </div>
+        
+                    </div>
+                </div>
+            
 
             <div class="propaganda">
                 <div class="compra-descricao">Gabinete Gamer Redragon Brawn, Mid Tower, Vidro Temperado, Black, Sem fonte, Sem Fan, GC-500</div>
@@ -83,6 +108,28 @@
     <footer>
         <a href="#"><img src="../Tela_inicial/imagens/rodape.png" alt="rodape" class="rodape"></a>
     </footer>
+
+
+    
+    <script>
+        var Mainimg = document.getElementById("Mainimg");
+        var smalling = document.getElementsByClassName("small-img");
+
+
+        smalling[0].onclick = function(){
+            Mainimg.src = smalling[0].src;
+        }
+        smalling[1].onclick = function(){
+            Mainimg.src = smalling[1].src;
+        }
+        smalling[2].onclick = function(){
+            Mainimg.src = smalling[2].src;
+        }
+        smalling[3].onclick = function(){
+            Mainimg.src = smalling[3].src;
+        }
+
+    </script>
     <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
     <script src="../Tela_inicial/script.js"></script>
 </body>
