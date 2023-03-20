@@ -18,6 +18,40 @@ section{
     background-size: cover;
 }
 
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #2d394b;
+    margin-bottom: 50px;
+}
+
+.logo{
+    height: 70px;
+}
+
+.pesquisar{
+    height: 40px;
+    width: 550px;
+    border:none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.menu-item{
+    color: white;
+    padding: 10px;
+}
+
+.menu-item:hover{
+    color: #cccccc;
+}
+
+
+
 .form-box{
     position: relative;
     width: 400px;
@@ -129,4 +163,15 @@ button{
 
 .register p a:hover{
     text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2d394b;
+}
+
+.rodape{
+    height: 120px;
 }

@@ -3,130 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Tela Inicial/css1.css">
-    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" type="text/css" href="../Tela_inicial/css1.css">
     <title></title>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="index.html"><img src="../Tela Inicial/imagens/logo.png" alt="logo" class="logo"></a>
-        <form action="">
-            <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
-        </form>
-        <nav>
-            <a href="#" class="menu-item">Login</a>
-            <a href="#" class="menu-item">Categorias</a>
-            <a href="../Carrinho/carrinho.html" class="menu-item">Carrinho</a>
-            <a href="#" class="menu-item">Contato</a>
-        </nav>
-    </header>
-    <main>
+    <section id="cabecalho">
+        <a href="../Tela_inicial/index1.html"><img src="../Tela_inicial/imagens/logo.png" alt="logo" class="logo"></a>
         
-        <section class="novidades">
-            <div class="parte-cima">
-                <h2 class="titulos">Meu Carrinho</h2>
-                <a class="ver-todos" href="#">VER TODOS ></a>
-            </div>
-            <div class="carrinho">
-                <div class="carrinho_produto">
-                    <a href="javascript:alert('mostrar produto')">
-                        <img src="../Tela Inicial/imagens/produtos/produto-gabinete.webp" alt="gabinete" class="novidade-produto-imagem">
-                    </a>
-                    <div class="carrinho_produto_info">
-                        <div class="carrinho_produto_descricao">Gabinete Gamer Redragon Brawn, Mid Tower, Vidro Temperado, Black, Sem fonte, Sem Fan, GC-500</div>
-                        <div class="carrinho_produto_descricao_preco_pix">
-                            <div class="carrinho_produto_descricao_preco_pix_div">
-                                <div class="descricao_preco">R$ 349,99</div>
-                                <div class="descricao_pagamento">À vista no pix</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carrinho_produto_div_botao">
-                        <button>Retirar do carrinho</button>
-                    </div>
-                </div>
-                <div class="carrinho_produto">
-                    <a href="javascript:alert('mostrar produto')">
-                        <img src="../Tela Inicial/imagens/produtos/produto-placa mae.webp" alt="placa mae" class="novidade-produto-imagem">
-                    </a>
-                    <div class="carrinho_produto_info">
-                        <div class="carrinho_produto_descricao">Placa Mãe Biostar B560MX-E PRO, Chipset B560, Intel LGA 1200, mATX, DDR4</div>
-                        <div class="carrinho_produto_descricao_preco_pix">
-                            <div class="carrinho_produto_descricao_preco_pix_div">
-                                <div class="descricao_preco">R$ 559,99</div>
-                                <div class="descricao_pagamento">À vista no pix</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carrinho_produto_div_botao">
-                        <button>Retirar do carrinho</button>
-                    </div>
-                </div>
-                <div class="carrinho_produto">
-                    <a href="javascript:alert('mostrar produto')">
-                        <img src="../Tela Inicial/imagens/produtos/produto-processador.jpg" alt="Processador AMD Ryzen 5 4600G" class="novidade-produto-imagem">
-                    </a>
-                    <div class="carrinho_produto_info">
-                        <div class="carrinho_produto_descricao">Processador AMD Ryzen 5 4600G 3.7GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, 100-100000147BOX</div>
-                        <div class="carrinho_produto_descricao_preco_pix">
-                            <div class="carrinho_produto_descricao_preco_pix_div">
-                                <div class="descricao_preco">R$ 489,99</div>
-                                <div class="descricao_pagamento">À vista no pix</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carrinho_produto_div_botao">
-                        <button>Retirar do carrinho</button>
-                    </div>
-                </div>
-                <div class="carrinho_produto">
-                    <a href="javascript:alert('mostrar produto')">
-                        <img src="../Tela Inicial/imagens/produtos/produto-monitor.jpg" alt="Monitor Gamer Samsung T350" class="novidade-produto-imagem">
-                    </a>
-                    <div class="carrinho_produto_info">
-                        <div class="carrinho_produto_descricao">Monitor Gamer Samsung T350, 22 pol, Full HD, IPS, HDMI/VGA, LF22T350FHLMZD</div>
-                        <div class="carrinho_produto_descricao_preco_pix">
-                            <div class="carrinho_produto_descricao_preco_pix_div">
-                                <div class="descricao_preco">R$ 899,99</div>
-                                <div class="descricao_pagamento">À vista no pix</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carrinho_produto_div_botao">
-                        <button>Retirar do carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div>
+        <ul id="navbar">
+            
+            <li><a href="../Login/login.html" >Login</a></li>
+            <li> <a href="#" >Categorias</a></li>
+            <li><a href="carrinho.html" >Carrinho</a></li>
+            <li><a href="#" >Contato</a></li>
+             <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+             <li><form action="">
+                <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
+            </form></li>
+        </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
-        <!-- <section>
-            <h2 class="titulos">Categorias</h2>
-            <div class="categorias">
-                <div class="categorias-individual">
-                    <p>Hardware</p>
-                    <a href="#"><img src="./imagens/categorias/hardware.webp" alt="hardware" class="categorias-individual-imagem"></a>
-                    
-                </div>
-                <div class="categorias-individual">
-                    <P>Periféricos</P>
-                    <a href="#"><img src="./imagens/categorias/mouse.jpg" alt="perifericos" class="categorias-individual-imagem"></a>
-                    
-                </div>
-                <div class="categorias-individual">
-                    <p>Jogos</p>
-                    <a href="#"><img src="./imagens/categorias/games.jpg" alt="games" class="categorias-individual-imagem"></a>
-                    
-                </div>
-                <div class="categorias-individual">
-                    <p>Computador</p>
-                    <a href="#"><img src="./imagens/categorias/computador.jpg" alt="computador" class="categorias-individual-imagem"></a>
-                    
-                </div>
-            </div>
-        </section> -->
-    </main>
+    <section id="carrinho" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remover</td>
+                    <td>Imagem</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../Tela_inicial/imagens/produtos/produto-gabinete.webp" alt=""></td>
+                    <td>Placa-Mãe ASUS TUF Gaming</td>
+                    <td>R$349,99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$800,00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="https://m.media-amazon.com/images/I/91Xi85WgpRL._AC_SX522_.jpg" alt=""></td>
+                    <td>Placa-Mãe ASUS TUF Gaming</td>
+                    <td>R$800,00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$800,00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="https://m.media-amazon.com/images/I/91Xi85WgpRL._AC_SX522_.jpg" alt=""></td>
+                    <td>Placa-Mãe ASUS TUF Gaming</td>
+                    <td>R$800,00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$800,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+<section id="addcarrinho" class="section-p1">
+    <div id="subtotal">
+        <h3>Total</h3>
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>R$1.949,99</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>R$1.949,99</strong></td>
+            </tr>
+        </table>
+        <button class="botao-compra">Comprar</button>
+    </div>
+</section>
+
     <footer>
-        <a href="#"><img src="./imagens/rodape.png" alt="rodape" class="rodape"></a>
+        <a href="#"><img src="../Tela_inicial/imagens/rodape.png" alt="rodape" class="rodape"></a>
     </footer>
+    <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
+    <script src="../Tela_inicial/script.js"></script>
 </body>
 </html>

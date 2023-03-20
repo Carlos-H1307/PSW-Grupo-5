@@ -12,6 +12,8 @@ body {
     background-color: #F2F3F4;
 }
 
+/*formatacao cabecalho*/
+
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -42,6 +44,8 @@ body {
 .menu-item:hover{
     color: #cccccc;
 }
+
+/*formatacao pagina principal*/
 
 .titulos{
     font-size: 30px;
@@ -142,6 +146,7 @@ main{
     height: 200px;
 }
 
+/*formatacao do rodape*/
 footer{
     text-align: center;
     margin: 0px;
@@ -151,4 +156,68 @@ footer{
 
 .rodape{
     height: 120px;
+}
+
+/*formatacao das compras*/
+
+.compra{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.propaganda{
+    margin: 25px;
+}
+
+.compra-descricao{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.compra-preco-avista{
+    font-size: 50px;
+    color: #296275;
+    font-weight: 650;
+}
+
+.compra-modo-pagamento{
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.compra-preco-real{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.compra-opcao{
+    font-size: 15px;
+}
+
+.compra-botao{
+    margin-top: 20px;
+    background-color: #296275;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.compra-botao:hover{
+    background-color: #2d394b;
+}
+
+.descrever{
+    margin-bottom: 50px;
+}
+
+.descricao{
+    line-height: 30px;
+    font-weight: 500;
+    word-spacing: 5px;
+    font-size: 18px;
 }
