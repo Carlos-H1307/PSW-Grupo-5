@@ -1,0 +1,69 @@
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.carrinho_produto{
+     /* background-color: red;  */
+    display: flex;
+    flex-direction: row;
+}
+.carrinho_produto a{
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.carrinho_produto_info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+.carrinho_produto_descricao{
+    overflow: hidden;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+.carrinho_produto_descricao:hover{
+    cursor: pointer;
+    color: rgb(32, 72, 105);
+}
+.carrinho_produto_descricao_preco_pix{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(11, 190, 190); */
+}
+.carrinho_produto_descricao_preco_pix_div{
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.descricao_preco{
+    margin-top: 10px;
+    font-size: 25px;
+    padding-left: 10px;
+    color: #296275;
+    font-weight: 700;
+}
+.descricao_pagamento{
+    padding-left: 10px;
+    color: rgb(88, 88, 88);
+    font-weight: 600;
+}
+.carrinho_produto_div_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrinho_produto_div_botao button{
+    background-color: rgb(207, 32, 32);
+    width: 100px;
+    height: 70px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
