@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background-color: #F2F3F4;
+}
+
+/*formatacao cabecalho*/
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #2d394b;
+    margin-bottom: 50px;
+}
+
+.logo{
+    height: 70px;
+}
+
+.pesquisar{
+    height: 40px;
+    width: 550px;
+    border:none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.menu-item{
+    color: white;
+    padding: 10px;
+}
+
+.menu-item:hover{
+    color: #cccccc;
+}
+
+/*formatacao pagina principal*/
+
+.titulos{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+main{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.parte-cima{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ver-todos{
+    color: black;
+    font-weight: 500;
+}
+
+.ver-todos:hover{
+    color: #999;
+    text-decoration: underline;
+}
+
+.produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.novidade-produto{
+    width: 250px;
+    background-color: white;
+    padding-bottom: 20px;
+    margin: 31px;
+}
+
+.novidade-produto-imagem{
+    width: 250px;
+    height: 200px;
+}
+
+.novidade-produto-descricao{
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+.preco{
+    margin-top: 10px;
+    font-size: 25px;
+    padding-left: 10px;
+    color: #296275;
+    font-weight: 700;
+}
+
+.modo-pagamento{
+    padding-left: 10px;
+    color: black;
+    opacity: 50%;
+}
+
+.novidade-produto-botao{
+    margin: 10px;
+    background-color: #296275;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.novidade-produto-botao:hover{
+    background-color: #2d394b;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.categorias-individual-imagem{
+    margin-top: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+/*formatacao do rodape*/
+footer{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2d394b;
+}
+
+.rodape{
+    height: 120px;
+}
+
+/*formatacao das compras*/
+
+.compra{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.propaganda{
+    margin: 25px;
+}
+
+.compra-descricao{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.compra-preco-avista{
+    font-size: 50px;
+    color: #296275;
+    font-weight: 650;
+}
+
+.compra-modo-pagamento{
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.compra-preco-real{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.compra-opcao{
+    font-size: 15px;
+}
+
+.compra-botao{
+    margin-top: 20px;
+    background-color: #296275;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.compra-botao:hover{
+    background-color: #2d394b;
+}
+
+.descrever{
+    margin-bottom: 50px;
+}
+
+.descricao{
+    line-height: 30px;
+    font-weight: 500;
+    word-spacing: 5px;
+    font-size: 18px;
+}
