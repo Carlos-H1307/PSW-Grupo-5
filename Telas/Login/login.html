@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../Tela_inicial/css1.css">
     <title>Login</title>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <section id="cabecalho">
         <a href="../Tela_inicial/index1.html"><img src="../Tela_inicial/imagens/logo.png" alt="logo" class="logo"></a>
-        <form action="">
-            <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
-        </form>
-        <nav>
-            <a href="login.html" class="menu-item">Login</a>
-            <a href="#" class="menu-item">Categorias</a>
-            <a href="#" class="menu-item">Carrinho</a>
-            <a href="#" class="menu-item">Contato</a>
-        </nav>
-    </header>
+        
+        <div>
+        <ul id="navbar">
+            
+            <li><a href="../Login/login.html" >Login</a></li>
+            <li> <a href="#" >Categorias</a></li>
+            <li><a href="carrinho.html" >Carrinho</a></li>
+            <li><a href="#" >Contato</a></li>
+             <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+             <li><form action="">
+                <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
+            </form></li>
+        </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
 
-    <section>
-        <div class="form-box">
+    <section id="login">
+        <div id="form-box">
             <div class="form-value">
                 <form action="">
                     <h2>Login</h2>
@@ -57,5 +67,7 @@
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
+    <script src="../Tela_inicial/script.js"></script>
 </body>
 </html>
