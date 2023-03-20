@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../Tela_inicial/css1.css">
     <title></title>
 </head>
 <body>
-    <header class="cabecalho">
+
+    <section id="cabecalho">
         <a href="../Tela_inicial/index1.html"><img src="../Tela_inicial/imagens/logo.png" alt="logo" class="logo"></a>
-        <form action="">
-            <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
-        </form>
-        <nav>
-            <a href="#" class="menu-item">Login</a>
-            <a href="#" class="menu-item">Categorias</a>
-            <a href="#" class="menu-item">Carrinho</a>
-            <a href="#" class="menu-item">Contato</a>
-        </nav>
-    </header>
+        
+        <div>
+        <ul id="navbar">
+            
+            <li><a href="../Login/login.html" >Login</a></li>
+            <li> <a href="#" >Categorias</a></li>
+            <li><a href="../Carrinho/carrinho.html" >Carrinho</a></li>
+            <li><a href="#" >Contato</a></li>
+             <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+             <li><form action="">
+                <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
+            </form></li>
+        </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="../Carrinho/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
     <main>
         <section class="compra">
             <div class="propaganda">
@@ -65,8 +78,12 @@
                 </div>
         </section>
     </main>
+
+
     <footer>
-        <a href="../html/index1.html"><img src="../imagens/rodape.png" alt="rodape" class="rodape"></a>
+        <a href="#"><img src="../Tela_inicial/imagens/rodape.png" alt="rodape" class="rodape"></a>
     </footer>
+    <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
+    <script src="../Tela_inicial/script.js"></script>
 </body>
 </html>

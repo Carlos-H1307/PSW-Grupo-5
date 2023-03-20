@@ -6,11 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.section-p1 {
+    padding: 40px 80px;
+}
+
+
 body {
     font-size: 100%;
     background-color: #F2F3F4;
 }
-
 /*formatacao cabecalho*/
 
 #cabecalho{
@@ -434,7 +438,7 @@ footer{
     cursor: pointer;
     box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.10);
     margin: 15px 0;
-    position: relative;
+    
 
 }
 
@@ -482,9 +486,7 @@ footer{
 
 @media (max-width:799px){
 
-    .section-p1 {
-        padding: 40px 80px;
-    } 
+     
     #navbar {
         display: flex;
         flex-direction: column;
