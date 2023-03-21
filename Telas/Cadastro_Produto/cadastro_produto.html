@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../CSS/global.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/cadastro_produto.css">
+    <title>loja</title>
+</head>
+<body>
+    <section id="cabecalho">
+        <a href="index1.html"><img src="../../Imagens/logo.png" alt="logo" class="logo"></a>
+        
+        <div>  
+            <ul id="navbar">
+                <a href="#" id="close"><i class="fa fa-xmark"></i></a>
+                <li><form action="">
+                    <input type="search" placeholder="Digite sua pesquisa aqui"  class="pesquisar">
+                </form></li>
+                <li><a href="../Login/login.html" >Login</a></li>
+                <li> <a href="#" >Categorias</a></li>
+                <li><a href="../Carrinho/carrinho.html" >Carrinho</a></li>
+                <li><a href="#" >Contato</a></li>
+                
+            </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="../Carrinho/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <main>
+        <section id="cadastro-produto">
+            <h1>Cadastro de Produto</h1>
+            <div id="form-box">
+                    <form action="">
+                        <div id="campo-form">
+                            <div>
+                                <label for="Categoria">Categoria</label>
+                                <select class="input-text" required>
+                                    <option value="">Escolha uma categoria</option>
+                                    <option value="placa grafica">Placas Gráfica</option>
+                                    <option value="armazenamento">Armazenamento</option>
+                                    <option value="memoria">Memória</option>
+                                    <option value="gabinete">Gabinete</option>
+                                    <option value="cooler">Cooler</option>
+                                    <option value="monitor">Monitor</option>
+                                    <option value="periferico">Periférico</option>
+                                    <option value="fonte">Fonte</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Nome">Nome</label>
+                                <input type="text" class="input-text" required>
+                            </div>
+                            <div>
+                                <label for="Marca">Marca</label>
+                                <input type="text" class="input-text" required>
+                            </div>
+                            <div>
+                                <label for="Preco">Preco</label>
+                                <input type="text" class="input-text" required>
+                            </div>
+                        </div>
+
+                        <div id="campo-desc">
+                            <label for="descricao">Descrição</label>
+                            <textarea name="descricao" cols="40" rows="15"></textarea>
+                        </div>
+
+                        <div id="campo-img">
+                            <label for="images" class="drop-container">
+                                <span class="drop-title">Solte aqui o arquivo</span>
+                                ou
+                                <input type="file" id="images" accept="image/*" required>
+                            </label>
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <a href="#"><img src="../../Imagens/rodape.png" alt="rodape" class="rodape"></a>
+    </footer>
+    <!-- Linkar localmente... este script somente funciona com internet -->
+    <script src="https://kit.fontawesome.com/ebb52b10e0.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/navbar.js"></script>
+</body>
+</html>
